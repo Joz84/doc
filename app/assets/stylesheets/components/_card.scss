@@ -1,0 +1,259 @@
+/*** Container */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/** Card */
+
+.card {
+  perspective: 500;
+  cursor: pointer;
+  display: inline-block;
+  margin: 1rem;
+}
+
+.card:hover .inner {
+  transform: rotateY(180deg);
+}
+
+.card .inner {
+  transition: .6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+
+/*** Card common */
+
+.card,
+.front,
+.back {
+  height: 250px;
+  width: 180px;
+}
+
+.front,
+.back {
+  /*backface-visibility:hidden;*/
+  box-shadow: 0 2px 0 rgba(0, 0, 0, .06);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.pantone-tm {
+  color: #231f20;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.pantone-tm sup {
+  font-size: 0.7rem;
+  position: absolute;
+}
+
+.color-info {
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+
+/*** Card front */
+
+.front {
+  z-index: 2;
+}
+
+.details {
+  background-color: #fff;
+  bottom: 0;
+  height: 90px;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+}
+
+.year {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  position: absolute;
+  right: 0;
+  top: -28px;
+}
+
+
+/*** Card back */
+
+.back {
+  display: flex;
+  flex-direction:column-reverse;
+  justify-content: space-between;
+  transform: rotateY(180deg);
+  background-color: #fff;
+  padding: 1.5rem 1.5rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.back ul {
+  margin-top: 1rem;
+}
+
+.back li {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  color: #888;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 10px 5px;
+  text-align: left;
+}
+
+.back li:hover {
+  color: #231f20;
+}
+
+.back li:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.back li span {
+  font-weight: normal;
+  float: right;
+}
+
+.button-cta {
+    width: 100px;
+/*     height:40px ;     */
+    padding:1em;
+    cursor:pointer;
+    color:white;
+    border:0;
+    background-color:#b868da;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    position: absolute;
+
+
+    overflow: hidden;
+  backface-visibility: hidden;
+}
+
+
+.button-cta span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+
+.button-cta:before{
+  content:"\f218";
+  font-family:"FontAwesome" ;
+/*   visibility: hidden; */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s;
+  left:0;
+  top:-100%;
+
+}
+.button-cta:hover span{
+  transform: translateY(300%);
+  transform: translateX(200%);
+}
+.button-cta:hover:before{
+  top: 0;
+  left:0;
+}
+.pantone-tm {
+  order:1;
+}
+
+
+/*** Card colors */
+
+.pt-2017 .front {
+  background-image: url('http://placeimg.com/200/200/nature');
+}
+
+.pt-2016-a .front {
+  background-color: #f7cac9;
+}
+
+.pt-2016-b .front {
+  background-color: #8ca4cf;
+}
+
+.pt-2015 .front {
+  background-color: #955251;
+}
+
+.pt-2014 .front {
+  background-color: #b565a7;
+}
+
+.pt-2013 .front {
+  background-color: #169c78;
+}
+
+.pt-2012 .front {
+  background-color: #f05442;
+}
+
+.pt-2011 .front {
+  background-color: #da4f70;
+}
+
+.pt-2010 .front {
+  background-color: #41b6ab;
+}
+
+.pt-2009 .front {
+  background-color: #f0bf59;
+}
+
+.pt-2008 .front {
+  background-color: #595ca1;
+}
+
+.pt-2007 .front {
+  background-color: #9c1b31;
+}
+
+.pt-2006 .front {
+  background-color: #decdbf;
+}
+
+.pt-2005 .front {
+  background-color: #4fb0ae;
+}
+
+.pt-2004 .front {
+  background-color: #e4583e;
+}
+
+.pt-2003 .front {
+  background-color: #7ac5c5;
+}
+
+.pt-2002 .front {
+  background-color: #c02034;
+}
+
+.pt-2001 .front {
+  background-color: #c94476;
+}
+
+.pt-2000 .front {
+  background-color: #9bb7d6;
+}
