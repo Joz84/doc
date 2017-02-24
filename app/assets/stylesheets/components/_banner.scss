@@ -1,0 +1,66 @@
+.banner {
+  color: white;
+  text-align: center;
+  height: calc(100vh -  100px);
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner h1 {
+  font-size: 50px;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  color: green;
+}
+.banner h1 span {
+  font-family: $base-font;
+  font-size: 60px;
+  color: maroon;
+}
+.banner p {
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+.banner-content {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 50px 100px;
+  border-radius: 5px;
+}
+/* Banner search form */
+.banner-search {
+  position: relative;
+  border: 1px solid #666666;
+  border-radius: 5px;
+}
+.banner-search-btn {
+  line-height: 40px;
+  color: #666666;
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 4px;
+  top: -2px;
+  z-index: 1;
+}
+.banner-search-input {
+  transition: all 0.15s ease;
+  line-height: 40px;
+  font-weight: lighter;
+  color: #666666;
+  border: 1px solid #E6E6E6;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+}
+.banner-search-input:focus  {
+  border: 1px solid #CCCCCC;
+}
+.logo-icon-large {
+  width: 100px;
+  height: 100px;
+}

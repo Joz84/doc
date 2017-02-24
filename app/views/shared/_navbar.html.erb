@@ -1,19 +1,15 @@
-<div class="navbar-wagon">
+<div class="navbar-wagon navbar-wagon-absolute">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <%= image_tag "logo.png" %>
+    <div class="logo">
+       <%= image_tag "logo.png", class: "logo-icon" %>
+      <div class="logo-font">Direct'<span>O</span>'Cuisines</div>
+    </div>
   <% end %>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-    <!-- Search form -->
-    <form action="" class="navbar-wagon-search">
-      <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
-      <button type="submit" class="navbar-wagon-search-btn">
-        <i class="fa fa-search"></i>
-      </button>
-    </form>
 
     <!-- Different navigation if login or not -->
     <% if user_signed_in? %>
@@ -53,24 +49,22 @@
     <% else %>
 
       <!-- Login text link -->
-      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Se connecter", new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
 
     <% end %>
 
-    <!-- Button (call-to-action) -->
-    <%= link_to t(".top_call_to_action", default: "Post stuff"), "#", class: "navbar-wagon-item navbar-wagon-button btn" %>
   </div>
-
   <!-- Dropdown list appearing on mobile only -->
   <div class="navbar-wagon-item hidden-md hidden-lg">
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
+        <li><a href="#">Se connecter</a></li>
+        <li><a href="#">Mon profile</a></li>
+        <li><a href="#">Comment ca marche?</a></li>
       </ul>
     </div>
   </div>
 </div>
+
 

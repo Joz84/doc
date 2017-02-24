@@ -1,0 +1,57 @@
+<div id="my_carousel" class="carousel slide" data-ride="carousel">
+  <!-- Bulles -->
+  <ol class="carousel-indicators">
+    <li data-target="#my_carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#my_carousel" data-slide-to="1"></li>
+    <li data-target="#my_carousel" data-slide-to="2"></li>
+  </ol>
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <!-- Page 1 -->
+    <div class="item active">
+      <div class="carousel-page">
+        <div class="grower-presentation" style="background-image: linear-gradient(-225deg, rgba(100,100,100,0.2) 0%, rgba(100,100,100,0.6) 50%), url(<%= image_path('sheep.jpeg') %>); background-position: bottom;">
+          <div class="grower-content">
+            <%= image_tag "grower01.png", class: "avatar-large" %>
+            <h1>Jen-Michel</h1>
+            <h2>Cultvateur</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolores, autem, dolore sequi possimus natus. Optio voluptas, a velit eum voluptatum magnam quod molestias corporis perspiciatis sapiente dolorum eaque ad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page 2 -->
+    <div class="item">
+      <div class="carousel-page">
+        <div class="grower-presentation" style="background-image: linear-gradient(-225deg, rgba(100,100,100,0.2) 0%, rgba(100,100,100,0.6) 50%), url(<%= image_path('grapes.jpeg') %>);">
+          <div class="grower-content">
+            <%= image_tag "grower02.png", class: "avatar-large" %>
+            <h1>Jen-Michel</h1>
+            <h2>Cultvateur</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolores, autem, dolore sequi possimus natus. Optio voluptas, a velit eum voluptatum magnam quod molestias corporis perspiciatis sapiente dolorum eaque ad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page 3 -->
+    <div class="item">
+      <div class="carousel-page">
+        <div class="grower-presentation" style="background-image: linear-gradient(-225deg, rgba(100,100,100,0.2) 0%, rgba(100,100,100,0.6) 50%), url(<%= image_path('cheese.jpg') %>);">
+          <div class="grower-content">
+            <%= image_tag "grower03.png", class: "avatar-large" %>
+            <h1>Jen-Michel</h1>
+            <h2>Cultvateur</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolores, autem, dolore sequi possimus natus. Optio voluptas, a velit eum voluptatum magnam quod molestias corporis perspiciatis sapiente dolorum eaque ad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contrôles -->
+  <a class="left carousel-control" href="#my_carousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#my_carousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
