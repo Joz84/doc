@@ -1,8 +1,16 @@
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(100,100,100,0.2) 0%, rgba(100,100,100,0.6) 50%), url(<%= image_path('banner-doc.png') %>);">
-  <div class="banner-content">
-    <%= image_tag "logo.png", class: "logo-icon-large" %>
-    <h1>Direct'<span>O</span>'Cuisines</h1>
-    <p>Des produits frais et locaux, sans détours!</p>
+  <div class="banner-content hidden-xs hidden-sm">
+
+    <h1>Direct'
+      <%= image_tag "logo.png", class: "logo-icon-large" %>
+    'Cuisines</h1>
+    <div class="subline">
+      <div class="subline-border">
+        <div class="diamond"></div>
+        <div class="diamond"></div>
+      </div>
+    </div>
+    <h2>Des produits frais et locaux, sans détours!</h2>
 
     <!-- Search form -->
     <form action="" class="banner-search">
@@ -11,6 +19,21 @@
         <i class="fa fa-search"></i>
       </button>
     </form>
-
   </div>
+
+  <div class="circuit">
+    <%= image_tag "circuit-court.png"%>
+    <div class="circuit-text">
+      <div class="client">
+        Test1
+      </div>
+      <div class="grower">
+        Test2
+      </div>
+      <div class="delivery">
+        Test3
+      </div>
+    </div>
+  </div>
+
 </div>

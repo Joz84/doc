@@ -4,6 +4,10 @@
  * Feel free to change them and create your own
  * ------------------------------------- */
 
+h2 {
+  font-family: $title-font;
+}
+
 // Paddings
 .padded {
   padding-top: 5em;
@@ -35,4 +39,38 @@
   width: 100%;
   text-align: center;
   padding: 50px 0px;
+  position: relative;
+}
+
+.subline {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.subline-border {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 5px;
+  border-bottom: 1px solid grey;
+}
+.diamond {
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom: 5px solid $green;
+  position: relative;
+  top: -7px;
+}
+.diamond:after {
+  content: '';
+  position: absolute;
+  left: -7px; top: 5px;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-top: 5px solid $green;
 }

@@ -80,6 +80,7 @@
 .logo {
   display: flex;
   justify-content: space-between;
+  align-items: bottom;
   width: 250px;
 
 }
@@ -87,12 +88,12 @@
   font-family: $header-font;
   font-size: 25px;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  color: green;
+  color: $green;
 }
 .logo-font span {
-  font-family: $base-font;
-  font-size: 32px;
-  color: maroon;
+  font-family: $title-font;
+  font-size: 40px;
+  // color: maroon;
 }
 .logo-icon {
   width: 50px;

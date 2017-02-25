@@ -1,3 +1,16 @@
 .presentation {
 
 }
+.img-right {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  height: 250px;
+}
+.img-left {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  height: 200px;
+  bottom: 0px;
+}
