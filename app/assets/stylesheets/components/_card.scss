@@ -46,7 +46,7 @@
 
 .pantone-tm {
   color: #231f20;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0.5rem 0;
   position: relative;
@@ -54,12 +54,12 @@
 }
 
 .pantone-tm sup {
-  font-size: 0.7rem;
+  font-size: 1rem;
   position: absolute;
 }
 
 .color-info {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   margin: 0.5rem 0;
 }
 
@@ -81,7 +81,7 @@
 
 .year {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
   position: absolute;
   right: 0;
@@ -111,7 +111,7 @@
   transition: color 0.3s;
   color: #888;
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   padding: 10px 5px;
   text-align: left;
 }
@@ -157,7 +157,7 @@
 
 .button-cta:before{
   content:"\f218";
-  font-family:"FontAwesome" ;
+  font-family: $header-font ;
 /*   visibility: hidden; */
   position: absolute;
   height: 100%;
@@ -179,81 +179,6 @@
   order:1;
 }
 
-
-/*** Card colors */
-
-.pt-2017 .front {
-  background-image: url('http://placeimg.com/200/200/nature');
-}
-
-.pt-2016-a .front {
-  background-color: #f7cac9;
-}
-
-.pt-2016-b .front {
-  background-color: #8ca4cf;
-}
-
-.pt-2015 .front {
-  background-color: #955251;
-}
-
-.pt-2014 .front {
-  background-color: #b565a7;
-}
-
-.pt-2013 .front {
-  background-color: #169c78;
-}
-
-.pt-2012 .front {
-  background-color: #f05442;
-}
-
-.pt-2011 .front {
-  background-color: #da4f70;
-}
-
-.pt-2010 .front {
-  background-color: #41b6ab;
-}
-
-.pt-2009 .front {
-  background-color: #f0bf59;
-}
-
-.pt-2008 .front {
-  background-color: #595ca1;
-}
-
-.pt-2007 .front {
-  background-color: #9c1b31;
-}
-
-.pt-2006 .front {
-  background-color: #decdbf;
-}
-
-.pt-2005 .front {
-  background-color: #4fb0ae;
-}
-
-.pt-2004 .front {
-  background-color: #e4583e;
-}
-
-.pt-2003 .front {
-  background-color: #7ac5c5;
-}
-
-.pt-2002 .front {
-  background-color: #c02034;
-}
-
-.pt-2001 .front {
-  background-color: #c94476;
-}
-
-.pt-2000 .front {
-  background-color: #9bb7d6;
+.card .front {
+  background-size: 100%;
 }

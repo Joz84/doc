@@ -12,8 +12,8 @@
 
 .footer {
   color: $bg-color;
-  text-align: center;
-  height: 400px;
+  text-align: left;
+  min-height: 400px;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   background-position: center;
@@ -22,4 +22,7 @@
   justify-content: center;
   flex-direction: column;
   padding-top: 70px;
+  img {
+    width: 80%;
+  }
 }
