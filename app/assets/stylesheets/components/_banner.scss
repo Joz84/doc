@@ -8,24 +8,32 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 70px;
 }
 .banner-content {
   // f5f0ea
 }
-.banner h1 {
-  padding-left: 32px;
-  font-size: 50px;
-  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  color: $green;
+.banner-border {
+  width: 100%;
+  padding: 20px 80px 15px 80px;
   background-color: rgba(245, 240, 234, 0.8);
   border: 5px solid rgba(234, 224, 214, 0.8);
+}
+.banner-title {
+  font-family: $header-font;
+  padding-left: 32px;
+  font-size: 40px;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  color: $green;
   text-shadow: 5px 5px 2px #c0c0c0;
-  padding: 30px 100px 50px 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 .banner h2 {
-  font-size: 28px;
-  color: #999;
-  margin-bottom: 20px;
+  font-size: 25px;
+  color: $white;
+  padding: 20px 0px 10px 0px;
 }
 /* Banner search form */
 .banner-search {
@@ -59,8 +67,9 @@
   border: 1px solid #CCCCCC;
 }
 .logo-icon-large {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 7px;
   // margin-bottom: 54px;
   // -moz-box-shadow: 3px 3px 15px 2px #c0c0c0;
   // -webkit-box-shadow: 3px 3px 15px 2px #c0c0c0;
@@ -69,8 +78,8 @@
   // filter:progid:DXImageTransform.Microsoft.Shadow(color=#c0c0c0, Direction=135, Strength=15);
 }
 .circuit {
-  margin-top: 50px;
-  width: 50%;
+  margin-top: 35px;
+  width: 42%;
   position: relative;
   img {
     width: 100%;
