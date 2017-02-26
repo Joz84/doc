@@ -9,11 +9,11 @@
 /** Card */
 
 .card {
-  -webkit-perspective:500px;
-     -moz-perspective:500px;
-      -ms-perspective:500px;
-       -o-perspective:500px;
-          perspective:500px;
+  // -webkit-perspective:500px;
+  //    -moz-perspective:500px;
+  //     -ms-perspective:500px;
+  //      -o-perspective:500px;
+  //         perspective:500px;
 
   // perspective: 500;
   cursor: pointer;
@@ -21,30 +21,30 @@
   margin: 1rem;
 }
 
-.card:hover .inner {
+// .card:hover .inner {
 
-  -webkit-transform:rotateY(180deg);
-     -moz-transform:rotateY(180deg);
-      -ms-transform:rotateY(180deg);
-       -o-transform:rotateY(180deg);
-          transform:rotateY(180deg);
+//   -webkit-transform:rotateY(180deg);
+//      -moz-transform:rotateY(180deg);
+//       -ms-transform:rotateY(180deg);
+//        -o-transform:rotateY(180deg);
+//           transform:rotateY(180deg);
 
 
-  // transform: rotateY(180deg);
-}
+//   // transform: rotateY(180deg);
+// }
 
 .card .inner {
 
-  -webkit-transition: .6s;
-     -moz-transition: .6s;
-      -ms-transition: .6s;
-       -o-transition: .6s;
-          transition: .6s;
-  -webkit-transform-style:preserve-3d;
-     -moz-transform-style:preserve-3d;
-      -ms-transform-style:preserve-3d;
-       -o-transform-style:preserve-3d;
-          transform-style:preserve-3d;
+  // -webkit-transition: .6s;
+  //    -moz-transition: .6s;
+  //     -ms-transition: .6s;
+  //      -o-transition: .6s;
+  //         transition: .6s;
+  // -webkit-transform-style:preserve-3d;
+  //    -moz-transform-style:preserve-3d;
+  //     -ms-transform-style:preserve-3d;
+  //      -o-transform-style:preserve-3d;
+  //         transform-style:preserve-3d;
 
 
   // transition: .6s;
@@ -65,11 +65,11 @@
 .front, .back {
 
 
-  -webkit-backface-visibility:hidden;
-     -moz-backface-visibility:hidden;
-      -ms-backface-visibility:hidden;
-       -o-backface-visibility:hidden;
-          backface-visibility:hidden;
+  // -webkit-backface-visibility:hidden;
+  //    -moz-backface-visibility:hidden;
+  //     -ms-backface-visibility:hidden;
+  //      -o-backface-visibility:hidden;
+  //         backface-visibility:hidden;
 
 
   // backface-visibility: hidden;
@@ -106,14 +106,6 @@
 }
 
 .details {
-
-  -webkit-backface-visibility:hidden;
-     -moz-backface-visibility:hidden;
-      -ms-backface-visibility:hidden;
-       -o-backface-visibility:hidden;
-          backface-visibility:hidden;
-
-
   background-color: #fff;
   bottom: 0;
   height: 90px;
@@ -141,7 +133,16 @@
   display: flex;
   flex-direction:column-reverse;
   justify-content: space-between;
-  transform: rotateY(180deg);
+
+
+  // -webkit-transform:rotateY(180deg);
+  //    -moz-transform:rotateY(180deg);
+  //     -ms-transform:rotateY(180deg);
+  //      -o-transform:rotateY(180deg);
+  //         transform:rotateY(180deg);
+
+  // transform: rotateY(180deg);
+
   background-color: #fff;
   padding: 1.5rem 1.5rem 0;
   text-align: center;
@@ -181,4 +182,72 @@
 
 .card .front {
   background-size: 100%;
+}
+// https://www.developpez.net/forums/d1286723/webmasters-developpement-web/mise-page-css/balise-backface-visibility/
+.card{
+  -webkit-perspective:500px;
+     -moz-perspective:500px;
+      -ms-perspective:500px;
+       -o-perspective:500px;
+          perspective:500px;
+
+}
+.card:hover .inner{
+  -webkit-transform:rotateY(180deg);
+     -moz-transform:rotateY(180deg);
+      -ms-transform:rotateY(180deg);
+       -o-transform:rotateY(180deg);
+          transform:rotateY(180deg);
+}
+
+.card div{
+  -webkit-transform:rotateY(0deg);
+     -moz-transform:rotateY(0deg);
+      -ms-transform:rotateY(0deg);
+       -o-transform:rotateY(0deg);
+          transform:rotateY(0deg);
+  -webkit-transition: .6s;
+     -moz-transition: .6s;
+      -ms-transition: .6s;
+       -o-transition: .6s;
+          transition: .6s;
+}
+
+.card div:hover{
+  -webkit-transform:rotateY(180deg);
+     -moz-transform:rotateY(180deg);
+      -ms-transform:rotateY(180deg);
+       -o-transform:rotateY(180deg);
+          transform:rotateY(180deg);
+}
+.inner{
+  -webkit-transform:rotateY(0deg);
+     -moz-transform:rotateY(0deg);
+      -ms-transform:rotateY(0deg);
+       -o-transform:rotateY(0deg);
+          transform:rotateY(0deg);
+  -webkit-transition: .6s;
+     -moz-transition: .6s;
+      -ms-transition: .6s;
+       -o-transition: .6s;
+          transition: .6s;
+  -webkit-transform-style:preserve-3d;
+     -moz-transform-style:preserve-3d;
+      -ms-transform-style:preserve-3d;
+       -o-transform-style:preserve-3d;
+          transform-style:preserve-3d;
+}
+.inner div{
+  -webkit-backface-visibility:hidden;
+     -moz-backface-visibility:hidden;
+      -ms-backface-visibility:hidden;
+       -o-backface-visibility:hidden;
+          backface-visibility:hidden;
+}
+.inner .back{
+  -webkit-transform:rotateY(180deg);
+     -moz-transform:rotateY(180deg);
+      -ms-transform:rotateY(180deg);
+       -o-transform:rotateY(180deg);
+          transform:rotateY(180deg);
 }
