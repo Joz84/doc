@@ -8,10 +8,10 @@
 
 .box {
   margin: 0px 10px;
-  background-color: white;
+  background-color: $white;
   position:relative;
   vertical-align: middle;
-  color: #0b7;
+  color: $green;
   display: inline-block;
   height: 60px;
   line-height: 60px;
@@ -19,13 +19,13 @@
   transition: 0.5s;
   padding: 0 20px;
   cursor: pointer;
-  border: 2px solid #0b7;
+  border: 2px solid $green;
   -webkit-transition:0.5s;
 }
 
 .box:hover {
-  border: 2px solid rgba(0,160,80,0);
-  color: black;
+  border: 2px solid rgba(79,150,8,0);
+  color: $maroon;
 }
 
 .box::before, .box::after {
@@ -42,7 +42,7 @@
 }
 
 .curmudgeon::before {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid $maroon;
   border-left: 0;
   -webkit-transform-origin: 0% 100%;
 }
@@ -56,4 +56,9 @@
 .box:hover::after, .box:hover::before {
   -webkit-transform: scale(1);
 }
-
+.custom-drpdown {
+  margin: 0 10px;
+  // color: $maroon;
+  // background-color: rgba(245, 240, 234, 0.8);
+  border: 5px solid rgba(234, 224, 214, 0.8);
+}

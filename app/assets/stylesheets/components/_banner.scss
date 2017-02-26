@@ -32,7 +32,7 @@
 }
 .banner h2 {
   font-size: 25px;
-  color: $white;
+  color: $bg-color;
   padding: 20px 0px 10px 0px;
 }
 /* Banner search form */
@@ -40,10 +40,12 @@
   position: relative;
   border: 1px solid #666666;
   border-radius: 5px;
+  width: 60%;
+  margin-left: 20%;
 }
 .banner-search-btn {
   line-height: 40px;
-  color: #666666;
+  color: $maroon;
   border: none;
   background: transparent;
   position: absolute;
@@ -62,6 +64,7 @@
   font-size: 14px;
   outline: none;
   width: 100%;
+  background-color: rgba(245, 240, 234, 0.8);
 }
 .banner-search-input:focus  {
   border: 1px solid #CCCCCC;
@@ -83,13 +86,14 @@
   position: relative;
   img {
     width: 100%;
+    margin-top: 7px;
   }
 }
 .circuit-text {
   position: absolute;
   top: 0px;
   z-index: 1;
-  color: $white;
+  color: $bg-color;
   text-align: center;
   display: flex;
   align-items: flex-start;
@@ -97,6 +101,11 @@
   // flex-direction: column;
   width: 100%;
   height: 100%;
+  font-family: $title-font;
+  font-size: 17px;
+  span {
+    color: $green;
+  }
 }
 .client {
 }

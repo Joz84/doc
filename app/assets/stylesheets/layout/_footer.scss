@@ -1,1 +1,25 @@
 // Your footer style
+.footer-bottom {
+  background-color: $black;
+  width: 100%;
+  height: 50px;
+  font-size: 10px;
+  color: $bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  color: $bg-color;
+  text-align: center;
+  height: 400px;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 70px;
+}

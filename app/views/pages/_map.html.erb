@@ -1,5 +1,5 @@
 
-<div class="doc-wrapper bg-grey2">
+<div class="doc-wrapper bg-white">
   <h1>Trouvez des produits près de chez vous</h1>
   <div class="subline">
     <div class="subline-border">
@@ -8,9 +8,12 @@
     </div>
   </div>
   <div class="map-container">
-    <div class="map-header">
-      <%= render 'tabs' %>
-    </div>
+    <form action="" class="map-search">
+      <input type="text" class="map-input" placeholder="Search something">
+      <button type="submit" class="map-btn">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
     <div id="map" style="width: 100%; height: 400px;"></div>
   </div>
 </div>

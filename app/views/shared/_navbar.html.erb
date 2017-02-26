@@ -11,7 +11,17 @@
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <!-- Login text link -->
-    <%= link_to "Se connecter", new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "#", class: "navbar-wagon-item navbar-wagon-link" do %>
+      <i class="fa fa-phone" aria-hidden="true"></i> Nous contacter
+    <% end %>
+    <%= link_to "#", class: "navbar-wagon-item navbar-wagon-link" do %>
+      <i class="fa fa-question-circle" aria-hidden="true"></i> Comment ça fonctionne?
+    <% end %>
+    <%= link_to "#", class: "navbar-wagon-item navbar-wagon-link" do %>
+      <i class="fa fa-sign-in" aria-hidden="true"></i> Se connecter
+    <% end %>
+
+
 
   </div>
   <!-- Dropdown list appearing on mobile only -->

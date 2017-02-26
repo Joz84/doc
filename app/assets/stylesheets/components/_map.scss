@@ -1,10 +1,42 @@
 .map-container {
+  margin-top: 30px;
   margin-left: 5%;
   width: 90%;
   border: 1px solid $gray2;
+  position: relative;
 }
-.map-header {
-  background-color: $white;
-  border: 1px solid $gray2;
-  height: 100px;
+.map-search {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1000;
+  // position: relative;
+  border-radius: 5px;
+  width: 300px;
+}
+.map-btn {
+  line-height: 40px;
+  color: $maroon;
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 4px;
+  top: -2px;
+  z-index: 1;
+}
+.map-input {
+  transition: all 0.15s ease;
+  line-height: 40px;
+  font-weight: lighter;
+  color: #666666;
+  border: 1px solid #E6E6E6;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+  background-color: rgba(245, 240, 234, 0.8);
+}
+.map-input:focus  {
+  border: 1px solid #CCCCCC;
 }

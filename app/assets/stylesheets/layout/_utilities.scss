@@ -3,9 +3,20 @@
  * These are examples of utilities classes
  * Feel free to change them and create your own
  * ------------------------------------- */
+h1 {
+  color: $maroon;
+}
 
 h2 {
   font-family: $title-font;
+  color: $green;
+  font-size: 22px;
+  i {
+    padding: 5px;
+    color: $maroon;
+    background-color: rgba(245, 240, 234, 0.8);
+    border: 5px solid rgba(234, 224, 214, 0.8);
+  }
 }
 
 // Paddings
@@ -15,6 +26,13 @@ h2 {
 }
 
 // Backgrounds
+.bg-color {
+  background: $bg-color;
+}
+.bg-color2 {
+  background: rgba(234, 224, 214, 0.7);
+}
+
 .bg-black {
   background: #4a4a4a;
 }
